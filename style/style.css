@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root{
+    --white: #ffffff; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+header{
+    display: flex;
+    justify-content:center;
+    padding: 1.2rem 1.5rem;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    
+}
+header h2{
+    width: 20%;
+}
+header ul{
+    width: 61%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-inline:1.2rem ;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.2s;
+}
+a:hover{
+    color: rgb(215, 212, 212) ;
+}
+.homepage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/family-camping-at-sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 65%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homepage .content{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+.homepage .title{
+    height: 48%;
+    text-align: center;
+}
+.homepage .title h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+.homepage .title p{
+    width: 85%;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+.homepage::before {
+    content: "";
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .homepage .content .service-button{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 0.7rem 1.8rem;
+    box-sizing: border-box;
+    transition: background 0.5s;
+    border: 1px solid white;
+  }
+  .homepage .content .service-button a{
+    color: black;
+  }
+  .homepage .content .service-button:hover {
+    a{
+        color: #fff ;
+    } 
+    background: rgba(255,255,255,0.3);
+  }
+  .our-services ,.about_us,.contact_us{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+
+  }
+  .our-services .service-container,.about_container , .contact_container{
+    width: 77%;
+    margin: auto;
+}
+.our-services .service-container .title , .about_tiltle,.contact_title{
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+}
+.our-services .service-container .title h2,.about_tiltle h2 ,.contact_title h2{
+    font-size: 30px;
+}
+.services-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.card-content{
+    width: 30%;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+   
+}
+.card-content img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 45px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.about_des{
+    margin-block: 1.5rem;
+}
+.about_des>h3{
+    margin-bottom: 15px;
+}
+.contact-sub-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem 0;
+}
+.contact-sub-container .address div{
+    display: flex;
+    align-items: center;
+    margin-block: 0.5rem;
+    .icon{
+        color: #333;
+        margin-right: 0.5r;
+    }
+    span{
+        margin-inline: 0.5rem ;
+    }
+}
+.contact_form{
+    width: 45%;
+}
+.contact_form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+form input {
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid gray;
+}
+form input:focus ,textarea{
+    outline: none;
+}
+form textarea{
+    padding: 10px 10px;
+}
+form .btn{
+    width: 30%;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+form .btn:hover{
+    background-color: rgb(79, 77, 77);
+}
